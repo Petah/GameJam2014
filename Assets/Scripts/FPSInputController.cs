@@ -11,11 +11,13 @@ public class FPSInputController : MonoBehaviour {
     public string taunt;
 
     private CharacterMotor motor;
-	private Weapon weapon;
+    private Weapon weapon;
+    private MeleeAttack melee;
 	
 	public void Awake() {
-		motor = GetComponent<CharacterMotor>();
-		weapon = GetComponent<Weapon>();
+        motor = GetComponent<CharacterMotor>();
+        weapon = GetComponent<Weapon>();
+        melee = GetComponent<MeleeAttack>();
 	}
 	
     public void Update() {
@@ -49,7 +51,10 @@ public class FPSInputController : MonoBehaviour {
 				//add sound in here later
 			}
 		}
-		//Input.GetButton(attack);
+		
+        if (Input.GetButton(attack)) {
+            melee.Attack();
+        }
         //Input.GetButton(shoot);
         //Input.GetButton(taunt);
     }
