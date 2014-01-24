@@ -15,6 +15,8 @@ GameObject:
   - 114: {fileID: 11400008}
   - 114: {fileID: 11400010}
   - 114: {fileID: 11400012}
+  - 114: {fileID: 11400014}
+  - 114: {fileID: 11400016}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -162,10 +164,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontal: Horizontal1
   vertical: Vertical1
-  jump: Jump1
-  attack: Attack1
-  shoot: Shoot1
-  taunt: 
+  jump: A1
+  attack: B1
+  shoot: X1
+  taunt: Y1
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -178,9 +180,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement:
-    maxForwardSpeed: 10
-    maxSidewaysSpeed: 10
-    maxBackwardsSpeed: 10
+    maxForwardSpeed: 7
+    maxSidewaysSpeed: 7
+    maxBackwardsSpeed: 7
     slopeSpeedMultiplier:
       serializedVersion: 2
       m_Curve:
@@ -201,14 +203,14 @@ MonoBehaviour:
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
-    maxGroundAcceleration: 30
+    maxGroundAcceleration: 62.8300018
     maxAirAcceleration: 20
-    gravity: 27
+    gravity: 45
     maxFallSpeed: 20
   jumping:
     enabled: 1
-    baseHeight: 2
-    extraHeight: 2
+    baseHeight: .699999988
+    extraHeight: .699999988
     perpAmount: 0
     steepPerpAmount: .5
   movingPlatform:
@@ -274,6 +276,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e620e18bf14b79349a0b0ebf16d28a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11400014
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae89bc932ae69e4b88f8158a44c9038, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11400016
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5053a28bf7dc0424ea70a7979bd219ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!135 &13500000
