@@ -41,9 +41,9 @@ public class FPSInputController : MonoBehaviour {
         motor.inputMoveDirection = transform.rotation * directionVector;
         motor.inputJump = Input.GetButton(jump);
         
-        Input.GetButton(attack);
-        Input.GetButton(shoot);
-        Input.GetButton(taunt);
+        //Input.GetButton(attack);
+        //Input.GetButton(shoot);
+        //Input.GetButton(taunt);
     }
 
 }
