@@ -7,6 +7,8 @@ public class FPSInputController : MonoBehaviour {
     public string vertical;
     public string jump;
     public string attack;
+    public string shoot;
+    public string taunt;
 
     private CharacterMotor motor;
     
@@ -38,6 +40,10 @@ public class FPSInputController : MonoBehaviour {
         // Apply the direction to the CharacterMotor
         motor.inputMoveDirection = transform.rotation * directionVector;
         motor.inputJump = Input.GetButton(jump);
+        
+        Input.GetButton(attack);
+        Input.GetButton(shoot);
+        Input.GetButton(taunt);
     }
 
 }
