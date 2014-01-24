@@ -479,6 +479,7 @@ GameObject:
   - 33: {fileID: 71095738}
   - 65: {fileID: 71095737}
   - 23: {fileID: 71095736}
+  - 54: {fileID: 71095740}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -540,6 +541,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &71095740
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 559306916}
+  m_GameObject: {fileID: 71095735}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &82284507
 GameObject:
   m_ObjectHideFlags: 0
@@ -551,6 +568,7 @@ GameObject:
   - 33: {fileID: 82284510}
   - 65: {fileID: 82284509}
   - 23: {fileID: 82284508}
+  - 54: {fileID: 82284512}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -612,6 +630,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &82284512
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1269871857}
+  m_GameObject: {fileID: 82284507}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &118860060
 Prefab:
   m_ObjectHideFlags: 0
@@ -667,6 +701,7 @@ GameObject:
   - 33: {fileID: 118921642}
   - 65: {fileID: 118921641}
   - 23: {fileID: 118921640}
+  - 54: {fileID: 118921644}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -728,6 +763,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &118921644
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 178885055}
+  m_GameObject: {fileID: 118921639}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &121176089
 Prefab:
   m_ObjectHideFlags: 0
@@ -1499,6 +1550,7 @@ GameObject:
   - 33: {fileID: 187609309}
   - 65: {fileID: 187609308}
   - 23: {fileID: 187609307}
+  - 54: {fileID: 187609311}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -1560,6 +1612,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &187609311
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 2067255790}
+  m_GameObject: {fileID: 187609306}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &192609317
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,6 +1639,7 @@ GameObject:
   - 33: {fileID: 192609320}
   - 65: {fileID: 192609319}
   - 23: {fileID: 192609318}
+  - 54: {fileID: 192609322}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -1632,6 +1701,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &192609322
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 121176089}
+  m_GameObject: {fileID: 192609317}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &224540060
 GameObject:
   m_ObjectHideFlags: 0
@@ -1643,6 +1728,7 @@ GameObject:
   - 33: {fileID: 224540063}
   - 65: {fileID: 224540062}
   - 23: {fileID: 224540061}
+  - 54: {fileID: 224540065}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -1704,6 +1790,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &224540065
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1486075392}
+  m_GameObject: {fileID: 224540060}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &241182277
 GameObject:
   m_ObjectHideFlags: 0
@@ -2038,6 +2140,7 @@ GameObject:
   - 33: {fileID: 268137798}
   - 65: {fileID: 268137797}
   - 23: {fileID: 268137796}
+  - 54: {fileID: 268137800}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -2099,6 +2202,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &268137800
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 137199360}
+  m_GameObject: {fileID: 268137795}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &300199237
 GameObject:
   m_ObjectHideFlags: 0
@@ -2308,6 +2427,7 @@ GameObject:
   - 33: {fileID: 312252153}
   - 65: {fileID: 312252152}
   - 23: {fileID: 312252151}
+  - 54: {fileID: 312252155}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -2369,6 +2489,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &312252155
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1029309253}
+  m_GameObject: {fileID: 312252150}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &314448080
 GameObject:
   m_ObjectHideFlags: 0
@@ -2380,6 +2516,7 @@ GameObject:
   - 33: {fileID: 314448083}
   - 65: {fileID: 314448082}
   - 23: {fileID: 314448081}
+  - 54: {fileID: 314448085}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -2441,6 +2578,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &314448085
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1789479797}
+  m_GameObject: {fileID: 314448080}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &332768920
 Prefab:
   m_ObjectHideFlags: 0
@@ -2688,6 +2841,7 @@ GameObject:
   - 33: {fileID: 373626340}
   - 65: {fileID: 373626339}
   - 23: {fileID: 373626338}
+  - 54: {fileID: 373626342}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -2749,6 +2903,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &373626342
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 545768915}
+  m_GameObject: {fileID: 373626337}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &380866788
 GameObject:
   m_ObjectHideFlags: 0
@@ -2760,6 +2930,7 @@ GameObject:
   - 33: {fileID: 380866791}
   - 65: {fileID: 380866790}
   - 23: {fileID: 380866789}
+  - 54: {fileID: 380866793}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -2821,6 +2992,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &380866793
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 692730583}
+  m_GameObject: {fileID: 380866788}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &389563424
 GameObject:
   m_ObjectHideFlags: 0
@@ -2832,6 +3019,7 @@ GameObject:
   - 33: {fileID: 389563427}
   - 65: {fileID: 389563426}
   - 23: {fileID: 389563425}
+  - 54: {fileID: 389563429}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -2893,6 +3081,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &389563429
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1559543405}
+  m_GameObject: {fileID: 389563424}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &404057963
 GameObject:
   m_ObjectHideFlags: 0
@@ -2904,6 +3108,7 @@ GameObject:
   - 33: {fileID: 404057966}
   - 65: {fileID: 404057965}
   - 23: {fileID: 404057964}
+  - 54: {fileID: 404057968}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -2965,6 +3170,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &404057968
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1175463358}
+  m_GameObject: {fileID: 404057963}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &408970579
 GameObject:
   m_ObjectHideFlags: 0
@@ -2976,6 +3197,7 @@ GameObject:
   - 33: {fileID: 408970582}
   - 65: {fileID: 408970581}
   - 23: {fileID: 408970580}
+  - 54: {fileID: 408970584}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -3037,6 +3259,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &408970584
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1675778399}
+  m_GameObject: {fileID: 408970579}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &418777790
 Prefab:
   m_ObjectHideFlags: 0
@@ -3684,6 +3922,7 @@ GameObject:
   - 33: {fileID: 509791673}
   - 65: {fileID: 509791672}
   - 23: {fileID: 509791671}
+  - 54: {fileID: 509791675}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -3745,6 +3984,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &509791675
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 969878714}
+  m_GameObject: {fileID: 509791670}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &526992788
 GameObject:
   m_ObjectHideFlags: 0
@@ -3756,6 +4011,7 @@ GameObject:
   - 33: {fileID: 526992791}
   - 65: {fileID: 526992790}
   - 23: {fileID: 526992789}
+  - 54: {fileID: 526992793}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -3817,6 +4073,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &526992793
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1654386017}
+  m_GameObject: {fileID: 526992788}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &532003308
 GameObject:
   m_ObjectHideFlags: 0
@@ -4470,6 +4742,7 @@ GameObject:
   - 33: {fileID: 618995614}
   - 65: {fileID: 618995613}
   - 23: {fileID: 618995612}
+  - 54: {fileID: 618995616}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -4531,6 +4804,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &618995616
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 462314904}
+  m_GameObject: {fileID: 618995611}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &636157552
 Prefab:
   m_ObjectHideFlags: 0
@@ -5338,6 +5627,7 @@ GameObject:
   - 33: {fileID: 781343677}
   - 65: {fileID: 781343676}
   - 23: {fileID: 781343675}
+  - 54: {fileID: 781343679}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -5399,6 +5689,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &781343679
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1737690600}
+  m_GameObject: {fileID: 781343674}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &786765831
 GameObject:
   m_ObjectHideFlags: 0
@@ -5602,6 +5908,7 @@ GameObject:
   - 33: {fileID: 809055330}
   - 65: {fileID: 809055329}
   - 23: {fileID: 809055328}
+  - 54: {fileID: 809055332}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -5663,6 +5970,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &809055332
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 48918717}
+  m_GameObject: {fileID: 809055327}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &841189777
 Prefab:
   m_ObjectHideFlags: 0
@@ -5794,6 +6117,7 @@ GameObject:
   - 33: {fileID: 867473174}
   - 65: {fileID: 867473173}
   - 23: {fileID: 867473172}
+  - 54: {fileID: 867473176}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -5855,6 +6179,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &867473176
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1150678589}
+  m_GameObject: {fileID: 867473171}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &867927325
 Prefab:
   m_ObjectHideFlags: 0
@@ -6269,6 +6609,7 @@ GameObject:
   - 33: {fileID: 941342906}
   - 65: {fileID: 941342905}
   - 23: {fileID: 941342904}
+  - 54: {fileID: 941342908}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -6330,6 +6671,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &941342908
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 2130762958}
+  m_GameObject: {fileID: 941342903}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &943632935
 Prefab:
   m_ObjectHideFlags: 0
@@ -6385,6 +6742,7 @@ GameObject:
   - 33: {fileID: 951811634}
   - 65: {fileID: 951811633}
   - 23: {fileID: 951811632}
+  - 54: {fileID: 951811636}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -6446,6 +6804,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &951811636
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1701795417}
+  m_GameObject: {fileID: 951811631}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &955811338
 GameObject:
   m_ObjectHideFlags: 0
@@ -6457,6 +6831,7 @@ GameObject:
   - 33: {fileID: 955811341}
   - 65: {fileID: 955811340}
   - 23: {fileID: 955811339}
+  - 54: {fileID: 955811343}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -6518,6 +6893,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &955811343
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 791824826}
+  m_GameObject: {fileID: 955811338}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &969878714
 Prefab:
   m_ObjectHideFlags: 0
@@ -6577,6 +6968,7 @@ GameObject:
   - 33: {fileID: 976449380}
   - 65: {fileID: 976449379}
   - 23: {fileID: 976449378}
+  - 54: {fileID: 976449382}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -6638,6 +7030,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &976449382
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1434933967}
+  m_GameObject: {fileID: 976449377}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &984595485
 GameObject:
   m_ObjectHideFlags: 0
@@ -7049,6 +7457,7 @@ GameObject:
   - 33: {fileID: 1044571479}
   - 65: {fileID: 1044571478}
   - 23: {fileID: 1044571477}
+  - 54: {fileID: 1044571481}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -7110,6 +7519,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &1044571481
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1808747500}
+  m_GameObject: {fileID: 1044571476}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1044854469
 Prefab:
   m_ObjectHideFlags: 0
@@ -7223,6 +7648,7 @@ GameObject:
   - 33: {fileID: 1060065445}
   - 65: {fileID: 1060065444}
   - 23: {fileID: 1060065443}
+  - 54: {fileID: 1060065447}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -7284,6 +7710,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &1060065447
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1799563411}
+  m_GameObject: {fileID: 1060065442}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1061702165
 Prefab:
   m_ObjectHideFlags: 0
@@ -7525,6 +7967,7 @@ GameObject:
   - 33: {fileID: 1105080952}
   - 65: {fileID: 1105080951}
   - 23: {fileID: 1105080950}
+  - 54: {fileID: 1105080954}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -7586,6 +8029,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &1105080954
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1968823996}
+  m_GameObject: {fileID: 1105080949}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1133072628
 GameObject:
   m_ObjectHideFlags: 0
@@ -7597,6 +8056,7 @@ GameObject:
   - 33: {fileID: 1133072631}
   - 65: {fileID: 1133072630}
   - 23: {fileID: 1133072629}
+  - 54: {fileID: 1133072633}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -7658,6 +8118,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &1133072633
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1501110087}
+  m_GameObject: {fileID: 1133072628}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1150678589
 Prefab:
   m_ObjectHideFlags: 0
@@ -7995,6 +8471,7 @@ GameObject:
   - 33: {fileID: 1261514632}
   - 65: {fileID: 1261514631}
   - 23: {fileID: 1261514630}
+  - 54: {fileID: 1261514634}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -8056,6 +8533,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &1261514634
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1562902534}
+  m_GameObject: {fileID: 1261514629}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1269871857
 Prefab:
   m_ObjectHideFlags: 0
@@ -8527,6 +9020,7 @@ GameObject:
   - 33: {fileID: 1372711390}
   - 65: {fileID: 1372711389}
   - 23: {fileID: 1372711388}
+  - 54: {fileID: 1372711392}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -8588,6 +9082,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &1372711392
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 468921421}
+  m_GameObject: {fileID: 1372711387}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1373097701
 GameObject:
   m_ObjectHideFlags: 0
@@ -9401,6 +9911,7 @@ GameObject:
   - 33: {fileID: 1508313121}
   - 65: {fileID: 1508313120}
   - 23: {fileID: 1508313119}
+  - 54: {fileID: 1508313123}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -9462,6 +9973,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &1508313123
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 992282477}
+  m_GameObject: {fileID: 1508313118}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1517221620
 GameObject:
   m_ObjectHideFlags: 0
@@ -9585,6 +10112,7 @@ GameObject:
   - 33: {fileID: 1532087615}
   - 65: {fileID: 1532087614}
   - 23: {fileID: 1532087613}
+  - 54: {fileID: 1532087617}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -9646,6 +10174,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &1532087617
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 359383253}
+  m_GameObject: {fileID: 1532087612}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1533186674
 Prefab:
   m_ObjectHideFlags: 0
@@ -9773,6 +10317,7 @@ GameObject:
   - 33: {fileID: 1542406769}
   - 65: {fileID: 1542406768}
   - 23: {fileID: 1542406767}
+  - 54: {fileID: 1542406771}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -9834,6 +10379,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &1542406771
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1172271419}
+  m_GameObject: {fileID: 1542406766}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1559543405
 Prefab:
   m_ObjectHideFlags: 0
@@ -10055,6 +10616,7 @@ GameObject:
   - 33: {fileID: 1606799834}
   - 65: {fileID: 1606799833}
   - 23: {fileID: 1606799832}
+  - 54: {fileID: 1606799836}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -10116,6 +10678,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &1606799836
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 179463485}
+  m_GameObject: {fileID: 1606799831}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1611664321
 GameObject:
   m_ObjectHideFlags: 0
@@ -10501,6 +11079,7 @@ GameObject:
   - 33: {fileID: 1689894220}
   - 65: {fileID: 1689894219}
   - 23: {fileID: 1689894218}
+  - 54: {fileID: 1689894222}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -10562,6 +11141,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &1689894222
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1403819020}
+  m_GameObject: {fileID: 1689894217}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1701795417
 Prefab:
   m_ObjectHideFlags: 0
@@ -11467,6 +12062,7 @@ GameObject:
   - 33: {fileID: 1815691638}
   - 65: {fileID: 1815691637}
   - 23: {fileID: 1815691636}
+  - 54: {fileID: 1815691640}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -11528,6 +12124,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &1815691640
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 841189777}
+  m_GameObject: {fileID: 1815691635}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1816404497
 GameObject:
   m_ObjectHideFlags: 0
@@ -11755,6 +12367,7 @@ GameObject:
   - 33: {fileID: 1865048040}
   - 65: {fileID: 1865048039}
   - 23: {fileID: 1865048038}
+  - 54: {fileID: 1865048042}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -11816,6 +12429,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &1865048042
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1011001197}
+  m_GameObject: {fileID: 1865048037}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1877011045
 GameObject:
   m_ObjectHideFlags: 0
@@ -11941,6 +12570,7 @@ GameObject:
   - 33: {fileID: 1919010350}
   - 65: {fileID: 1919010349}
   - 23: {fileID: 1919010348}
+  - 54: {fileID: 1919010352}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -12002,6 +12632,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &1919010352
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1291532885}
+  m_GameObject: {fileID: 1919010347}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1921326574
 GameObject:
   m_ObjectHideFlags: 0
@@ -12013,6 +12659,7 @@ GameObject:
   - 33: {fileID: 1921326577}
   - 65: {fileID: 1921326576}
   - 23: {fileID: 1921326575}
+  - 54: {fileID: 1921326579}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -12074,6 +12721,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &1921326579
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1458666454}
+  m_GameObject: {fileID: 1921326574}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1924552229
 GameObject:
   m_ObjectHideFlags: 0
@@ -12085,6 +12748,7 @@ GameObject:
   - 33: {fileID: 1924552232}
   - 65: {fileID: 1924552231}
   - 23: {fileID: 1924552230}
+  - 54: {fileID: 1924552234}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -12146,6 +12810,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &1924552234
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 867927325}
+  m_GameObject: {fileID: 1924552229}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1926095449
 Prefab:
   m_ObjectHideFlags: 0
@@ -12249,6 +12929,7 @@ GameObject:
   - 33: {fileID: 1932291878}
   - 65: {fileID: 1932291877}
   - 23: {fileID: 1932291876}
+  - 54: {fileID: 1932291880}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -12310,6 +12991,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &1932291880
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1932119280}
+  m_GameObject: {fileID: 1932291875}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1945651529
 GameObject:
   m_ObjectHideFlags: 0
@@ -12321,6 +13018,7 @@ GameObject:
   - 33: {fileID: 1945651532}
   - 65: {fileID: 1945651531}
   - 23: {fileID: 1945651530}
+  - 54: {fileID: 1945651534}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -12382,6 +13080,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &1945651534
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 2032411987}
+  m_GameObject: {fileID: 1945651529}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1968823996
 Prefab:
   m_ObjectHideFlags: 0
@@ -13039,6 +13753,7 @@ GameObject:
   - 33: {fileID: 2039561324}
   - 65: {fileID: 2039561323}
   - 23: {fileID: 2039561322}
+  - 54: {fileID: 2039561326}
   m_Layer: 0
   m_Name: ForegroundWall
   m_TagString: Untagged
@@ -13100,6 +13815,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1373097702}
+--- !u!54 &2039561326
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5189597a397202a43bc14594989e650e,
+    type: 2}
+  m_PrefabInternal: {fileID: 453289059}
+  m_GameObject: {fileID: 2039561321}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &2045213335
 Prefab:
   m_ObjectHideFlags: 0

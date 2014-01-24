@@ -12,7 +12,6 @@ public class KnockBack : MonoBehaviour {
     }
     
     public void AddImpact(Impact incoming) {
-        Debug.Log("test");
         incoming.direction.Normalize();
         if (incoming.direction.y < 0) {
             incoming.direction.y = -incoming.direction.y; // reflect down force on the ground

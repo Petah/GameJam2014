@@ -31,7 +31,7 @@ public class MeleeAttack : MonoBehaviour {
             Vector3 direction = (hitSphere.position - (transform.position + center)).normalized;
             foreach (RaycastHit raycastHit in Physics.RaycastAll(transform.position + center, direction, 0.5f)) {
                 if (raycastHit.transform.gameObject.tag == "Player") {
-                    raycastHit.transform.gameObject.SendMessage("AddImpact", new Impact(direction, 30), SendMessageOptions.DontRequireReceiver);
+                    raycastHit.transform.gameObject.SendMessage("AddImpact", new Impact(direction, 30, gameObject), SendMessageOptions.DontRequireReceiver);
                     //raycastHit.transform.rigidbody.AddForce(1 * flipSprite.Direction, 0.1f, 0);
                     i += 3f;
                 }

@@ -47,7 +47,7 @@ public class RespawnUI : MonoBehaviour {
         if (respawn.Respawning > 0) {
             result += "Respawning in: " + respawn.Respawning;
         }
-        result += "Kill counter: " + killCounter.KillCount;
+        result += "Kill counter: " + killCounter.KillCounts.Count;
         return result;
     }
 
@@ -58,9 +58,12 @@ public class RespawnUI : MonoBehaviour {
         GUI.Box(new Rect(0,Screen.height - 50, width, 50), GetGUIText(player3Respawn, player3KillCounter));
         GUI.Box(new Rect(Screen.width - width, Screen.height - 50, width, 50), GetGUIText(player4Respawn, player4KillCounter));
 
-        for (int i = 0; i < player1KillCounter.KillCount; i++) {
-            GUI.DrawTexture(new Rect(15 * i, 15, 15, 31), player1Head);
+        int x = 0;
+        foreach (GameObject gameObject in player1KillCounter.KillCounts) {
+            x += 15;
+            GUI.DrawTexture(new Rect(x, 15, 15, 31), player1Head);
         }
     }
+
 }
 

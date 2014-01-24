@@ -57,7 +57,7 @@ gap = false;
             
             for(var j:int = (Random.value * (maxPlatformSize - minPlatformSize)) + minPlatformSize; j > 0; j--){
             	if(totCubes > 0){
-            		var instancePlatform1 =  Instantiate(wallPrefab, Vector3(totCubes - 10,currentY,0), Quaternion.identity);
+            		var instancePlatform1 =  Instantiate(wallPrefab, Vector3(totCubes - 10, currentY,0), Quaternion.identity);
             	}
             	totCubes--;
             	}
