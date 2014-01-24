@@ -3,64 +3,65 @@ using System.Collections;
 
 public class MeleeAttack : MonoBehaviour {
 
-    private Transform hitSphere;
     private FlipSprite flipSprite;
     private float i;
-    private float range = 0.6f;
+    private float swing = 0.6f;
+    private float range = 1.2f;
     private Vector3 center = new Vector3(0, -0.3f, 0);
+    private Vector3 direction = Vector3.zero;
+    private int reload = 0;
     
     public void Awake() {
-        hitSphere = transform.Find("HitSphere");
         flipSprite = transform.Find("Sprite").GetComponent<FlipSprite>();
     }
 
     public void Attack() {
-        if (i >= range) {
+        if (i >= swing && reload == 0) {
             i = -1.4f;
+            reload = 30;
         }
     }
     
     public void FixedUpdate() {
-        if (i <= range && flipSprite) {
-            Vector3 position = transform.position;
-            position.x = Mathf.Cos(i) / 2;
-            position.y = Mathf.Sin(-i) / 2 - 0.3f;
-            position.x *= flipSprite.Direction;
-            hitSphere.position = transform.position + position;
-            
-            Vector3 direction = (hitSphere.position - (transform.position + center)).normalized;
-            foreach (RaycastHit raycastHit in Physics.RaycastAll(transform.position + center, direction, 0.5f)) {
+        if (reload > 0) {
+            reload--;
+        }
+        if (i <= swing) {
+            foreach (RaycastHit raycastHit in Physics.RaycastAll(transform.position + center, GetDirection(), range)) {
                 if (raycastHit.transform.gameObject.tag == "Player") {
-                    raycastHit.transform.gameObject.SendMessage("AddImpact", new Impact(direction, 30, gameObject), SendMessageOptions.DontRequireReceiver);
-                    //raycastHit.transform.rigidbody.AddForce(1 * flipSprite.Direction, 0.1f, 0);
-                    i += 3f;
+                    Vector3 impactDirection;
+                    if (raycastHit.transform.position.x > transform.position.x) {
+                        impactDirection = Vector3.right;
+                    } else {
+                        impactDirection = Vector3.left;
+                    }
+                    raycastHit.transform.gameObject.SendMessage("AddImpact", new Impact(impactDirection, 30, gameObject), SendMessageOptions.DontRequireReceiver);
+                    i = 1000f;
                 }
             }
 
             i += 0.3f;
-        } else {
-
         }
     }
 
-    
-    public void OnDrawGizmosSelected() {
-        if (hitSphere) {
-            Vector3 direction = (hitSphere.position - (transform.position + center)).normalized;
-            Gizmos.DrawRay(transform.position + center, direction);
-        }
-    }
-
-    /*
-    public void OnDrawGizmosSelected() {
-        Gizmos.color = Color.yellow;
+    public Vector3 GetDirection() {
         Vector3 position = transform.position;
-        for (float i = -0.6f; i < Mathf.PI / 2.4f; i += 0.3f) {
-            position.x = Mathf.Cos(i) / 2;
-            position.y = Mathf.Sin(i) / 2 + 1;
-            Gizmos.DrawSphere(position, 0.1f);
+        position.x = Mathf.Cos(i) / 2;
+        position.y = Mathf.Sin(-i) / 2 - 0.3f;
+        position.x *= flipSprite.Direction;
+        position = transform.position + position;
+        
+        return (position - (transform.position + center)).normalized;
+    }
+
+    public void OnDrawGizmos() {
+        if (i <= swing && flipSprite) {
+            Gizmos.DrawRay(transform.position + center, GetDirection() * range);
         }
     }
-    */
+
+    public bool IsSwiging() {
+        return i <= swing;
+    }
 
 }
