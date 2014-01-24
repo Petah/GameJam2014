@@ -6,9 +6,11 @@ var wallTweak:float = 1.0;
 var wallHitVelocity:float = 1.0;
 var movingLeft:boolean = true;
 var firstHit:boolean = true;
+var nudgeVelocity:float = 5;
 
 function Start () {
-	lastCollisionY = transform.position.y + 50;
+	lastCollisionY = transform.position.y;
+	Debug.Log(lastCollisionY);
 }
 
 
@@ -19,17 +21,24 @@ function Start () {
      
      if(theCollision.gameObject.name == "ForegroundWall"){
       //Hit the floor
-      
+      if(firstHit){
+      	if (Random.value >= 0.5)
+        	{
+        		transform.rigidbody.AddForce(Vector3(1,0,0) * rollForce);
+        		movingLeft = true;
+      		}else{
+      			transform.rigidbody.AddForce(Vector3(-1,0,0) * rollForce);
+      			movingLeft = false;
+      		}
+      		firstHit = false;
+      	}
       // compare this collision with the last to see if it is a new platform
       var newHit:int = theCollision.transform.position.y;
-      if(lastCollisionY > newHit + platformGapSize){
+      if(lastCollisionY > newHit + (platformGapSize/2)){
       //Pick direction
-      if (Random.value >= 0.5)
-        {
-            if(firstHit){
-            transform.rigidbody.AddForce(Vector3(1,0,0) * rollForce);
-            firstHit = false;
-            }else if(movingLeft){
+      if (Random.value >= 0.5){
+            
+            if(movingLeft){
             transform.rigidbody.AddForce(Vector3(1,0,0) * rollForce);
             }else{
             transform.rigidbody.AddForce(Vector3(2,0,0) * rollForce);
@@ -37,10 +46,7 @@ function Start () {
             movingLeft = true;
             
         }else{
-        	if(firstHit){
-            transform.rigidbody.AddForce(Vector3(1,0,0) * rollForce);
-            firstHit = false;
-        	}else if(movingLeft){
+        	if(movingLeft){
         	transform.rigidbody.AddForce(Vector3(-2,0,0) * rollForce);
         	}else{
         	transform.rigidbody.AddForce(Vector3(-1,0,0) * rollForce);
@@ -57,7 +63,9 @@ function Start () {
         	}else{
         		transform.rigidbody.AddForce(Vector3(2,0,0) * rollForce);
         	}
-        lastCollisionY = newHit;
+        //lastCollisionY = newHit;
+        }else{
+        
         }
      }
     }
@@ -66,4 +74,15 @@ function Start () {
 
 function Update () {
 
+if(-nudgeVelocity < transform.rigidbody.velocity.x && transform.rigidbody.velocity.x < nudgeVelocity && transform.rigidbody.velocity.y == 0 ){
+
+	if (Random.value >= 0.5){
+
+		transform.rigidbody.AddForce(Vector3(-1,0,0) * rollForce);
+	}else{
+		transform.rigidbody.AddForce(Vector3(1,0,0) * rollForce);
+	}
 }
+
+}
+

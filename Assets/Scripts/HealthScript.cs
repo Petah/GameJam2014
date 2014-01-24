@@ -7,7 +7,8 @@ public class HealthScript : MonoBehaviour {
 	/// Total hitpoints
 	/// </summary>
 	public int hp = 2;
-	
+	private float health = 20;
+
 	/// <summary>
 	/// Enemy or player?
 	/// </summary>
@@ -23,6 +24,7 @@ public class HealthScript : MonoBehaviour {
 			if (shot.isEnemyShot != isEnemy)
 			{
 				hp -= shot.damage;
+
 				
 				// Destroy the shot
 				// Remember to always target the game object,
