@@ -1549,6 +1549,7 @@ GameObject:
   - 114: {fileID: 300199240}
   - 114: {fileID: 300199239}
   - 114: {fileID: 300199243}
+  - 114: {fileID: 300199241}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Player
@@ -1563,7 +1564,7 @@ Transform:
   m_PrefabInternal: {fileID: 1908893111}
   m_GameObject: {fileID: 300199237}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.48575473, z: 0}
+  m_LocalPosition: {x: 0, y: 1.25977397, z: 0}
   m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children:
   - {fileID: 1129793391}
@@ -1641,6 +1642,17 @@ MonoBehaviour:
     slidingSpeed: 15
     sidewaysControl: 1
     speedControl: .400000006
+--- !u!114 &300199241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 300199237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34839bcd48a35a40a11db4399501b88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!143 &300199242
 CharacterController:
   m_ObjectHideFlags: 0
@@ -3277,7 +3289,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 39af79c02ba35df40ae02d9dca8a7de4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.48575473
+      value: 1.17320228
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 39af79c02ba35df40ae02d9dca8a7de4, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3709,7 +3721,7 @@ Transform:
   m_PrefabInternal: {fileID: 567386969}
   m_GameObject: {fileID: 680542856}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.8522706, y: 3.48575473, z: 0}
+  m_LocalPosition: {x: -2.8522706, y: 1.17320228, z: 0}
   m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children:
   - {fileID: 963495846}
@@ -7236,14 +7248,20 @@ Transform:
   - {fileID: 268137799}
   - {fileID: 118921643}
   - {fileID: 1606799835}
+  - {fileID: 1369974568}
   - {fileID: 1532087616}
   - {fileID: 1091712614}
+  - {fileID: 1551730773}
+  - {fileID: 1957676354}
   - {fileID: 2039561325}
   - {fileID: 618995615}
   - {fileID: 1372711391}
+  - {fileID: 559605951}
   - {fileID: 373626341}
   - {fileID: 71095739}
+  - {fileID: 1792751994}
   - {fileID: 380866792}
+  - {fileID: 1138923831}
   - {fileID: 955811342}
   - {fileID: 259674832}
   - {fileID: 1815691639}
@@ -7255,6 +7273,7 @@ Transform:
   - {fileID: 1895437973}
   - {fileID: 244576926}
   - {fileID: 312252154}
+  - {fileID: 714377889}
   - {fileID: 867473175}
   - {fileID: 1695864599}
   - {fileID: 2060003182}
@@ -7284,6 +7303,8 @@ Transform:
   - {fileID: 1235352385}
   - {fileID: 1207261919}
   - {fileID: 781343678}
+  - {fileID: 106178035}
+  - {fileID: 1240324232}
   - {fileID: 314448084}
   - {fileID: 1564147648}
   - {fileID: 1060065446}
@@ -7292,23 +7313,14 @@ Transform:
   - {fileID: 661746360}
   - {fileID: 1932291879}
   - {fileID: 1105080953}
+  - {fileID: 1891721411}
   - {fileID: 445386107}
   - {fileID: 1945651533}
   - {fileID: 1069037052}
+  - {fileID: 699342009}
   - {fileID: 187609310}
   - {fileID: 286214652}
   - {fileID: 941342907}
-  - {fileID: 1138923831}
-  - {fileID: 559605951}
-  - {fileID: 714377889}
-  - {fileID: 1551730773}
-  - {fileID: 1792751994}
-  - {fileID: 1369974568}
-  - {fileID: 1240324232}
-  - {fileID: 699342009}
-  - {fileID: 106178035}
-  - {fileID: 1891721411}
-  - {fileID: 1957676354}
   m_Father: {fileID: 0}
 --- !u!1001 &1403819020
 Prefab:
@@ -9929,7 +9941,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 39af79c02ba35df40ae02d9dca8a7de4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.48575473
+      value: 1.25977397
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 39af79c02ba35df40ae02d9dca8a7de4, type: 2}
       propertyPath: m_LocalPosition.z
