@@ -11,11 +11,13 @@ public class FPSInputController : MonoBehaviour {
     public string taunt;
 
     private CharacterMotor motor;
-    
-    public void Awake() {
-        motor = GetComponent<CharacterMotor>();
-    }
-    
+	private Weapon weapon;
+	
+	public void Awake() {
+		motor = GetComponent<CharacterMotor>();
+		weapon = GetComponent<Weapon>();
+	}
+	
     public void Update() {
         // Get the input vector from keyboard or analog stick
         Vector3 directionVector = new Vector3(Input.GetAxis(horizontal), 0, 0);
@@ -40,8 +42,14 @@ public class FPSInputController : MonoBehaviour {
         // Apply the direction to the CharacterMotor
         motor.inputMoveDirection = transform.rotation * directionVector;
         motor.inputJump = Input.GetButton(jump);
-        
-        //Input.GetButton(attack);
+		
+		if (Input.GetButton(shoot)) {
+			if (weapon != null && weapon.CanAttack) {
+				weapon.Attack(true);
+				//add sound in here later
+			}
+		}
+		//Input.GetButton(attack);
         //Input.GetButton(shoot);
         //Input.GetButton(taunt);
     }

@@ -128,14 +128,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 100002}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 829acd92aa338f64b8707bcec66f7e9c, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b811ed4f4c986f478c24f2d191a5692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   horizontal: Horizontal1
   vertical: Vertical1
   jump: Jump1
   attack: Attack1
-  shoot: 
+  shoot: Shoot1
   taunt: 
 --- !u!1002 &11400001
 EditorExtensionImpl:
