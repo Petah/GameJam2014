@@ -1349,6 +1349,67 @@ Transform:
   m_LocalScale: {x: .300000012, y: .300000012, z: .300000012}
   m_Children: []
   m_Father: {fileID: 680542861}
+--- !u!1 &637196924
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 637196926}
+  - 114: {fileID: 637196925}
+  - 114: {fileID: 637196927}
+  m_Layer: 0
+  m_Name: GenerateMap
+  m_TagString: Untagged
+  m_Icon: {fileID: -1500306622, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &637196925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 637196924}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fb2d8d3a25d48f4fbd1011f32e56cbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startY: 1
+  wallPrefab: {fileID: 400000, guid: 5189597a397202a43bc14594989e650e, type: 2}
+  stopOffsetY: 7
+  platformHeight: 4
+  minPlatformSize: 2
+  maxPlatformSize: 6
+  minGapSize: 2
+  maxGapSize: 6
+  minNoOfPlatforms: 1
+  maxNoOfPlatforms: 3
+  nextSize: 0
+--- !u!4 &637196926
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 637196924}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 4.5634737, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &637196927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 637196924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2590afa16b3068e4cb1ac5ae67512dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &680542856
 GameObject:
   m_ObjectHideFlags: 0
