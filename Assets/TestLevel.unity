@@ -1017,7 +1017,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 300199238}
   - 143: {fileID: 300199242}
-  - 114: {fileID: 300199241}
   - 114: {fileID: 300199240}
   - 114: {fileID: 300199239}
   m_Layer: 0
@@ -1042,29 +1041,29 @@ Transform:
 --- !u!114 &300199239
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400004, guid: 9d4133d5d30b644bd87802a347eaccbe,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 300199237}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60bca8f58a0b8478e946e6e86658cb29, type: 3}
+  m_Script: {fileID: 11500000, guid: 829acd92aa338f64b8707bcec66f7e9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  horizontal: Horizontal1
+  vertical: Vertical1
+  jump: Jump1
+  attack: Attack1
 --- !u!114 &300199240
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: 9d4133d5d30b644bd87802a347eaccbe,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 300199237}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ab79d7f243824f5d9826bd83522c8df, type: 3}
+  m_Script: {fileID: 11500000, guid: f705de47ffd41474cab5922848bb0243, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canControl: 1
-  useFixedUpdate: 1
   movement:
     maxForwardSpeed: 10
     maxSidewaysSpeed: 10
@@ -1090,8 +1089,8 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
     maxGroundAcceleration: 30
-    maxAirAcceleration: 15
-    gravity: 20
+    maxAirAcceleration: 20
+    gravity: 27
     maxFallSpeed: 20
   jumping:
     enabled: 1
@@ -1104,28 +1103,9 @@ MonoBehaviour:
     movementTransfer: 2
   sliding:
     enabled: 1
-    slidingSpeed: 10
+    slidingSpeed: 15
     sidewaysControl: 1
     speedControl: .400000006
---- !u!114 &300199241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 9d4133d5d30b644bd87802a347eaccbe,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 300199237}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68ec2fe99d1108b9d0006a298d76c639, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  axes: 1
-  sensitivityX: 15
-  sensitivityY: 0
-  minimumX: -360
-  maximumX: 360
-  minimumY: 0
-  maximumY: 0
 --- !u!143 &300199242
 CharacterController:
   m_ObjectHideFlags: 0
