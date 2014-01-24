@@ -135,6 +135,8 @@ MonoBehaviour:
   vertical: Vertical1
   jump: Jump1
   attack: Attack1
+  shoot: 
+  taunt: 
 --- !u!1002 &11400001
 EditorExtensionImpl:
   serializedVersion: 6
