@@ -24,7 +24,7 @@ public class PlayerControllBindings : MonoBehaviour {
     }
 
     public void CreatePlayer(int player) {
-        players[player - 1] = Instantiate(playerPrefab, Vector3.zero, Quaternion.identity) as GameObject;
+        players[player - 1] = Instantiate(playerPrefab, new Vector3(0f, 10000000f, 0f), Quaternion.identity) as GameObject;
         FPSInputController controller = players[player - 1].GetComponent<FPSInputController>();
         controller.horizontal = horizontal + player;
         controller.vertical = vertical + player;
