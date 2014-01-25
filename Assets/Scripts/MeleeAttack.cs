@@ -4,127 +4,62 @@ using System.Collections;
 public class MeleeAttack : MonoBehaviour {
 
     private DwarfAni da;
-
-    private Vector3 center = new Vector3(0, -0.6f, 0);
-
-    private int swingReload = 0;
-    private int swingReloadTime = 30;
-    private float swingForce = 20;
-    private float swingPosition = 1000;
-    private float swingStart = -3.5f;
-    private float swingStart2 = -1.5f;
-    private float swingEnd = 1.6f;
-    private float swingRange = 2.2f;
-
-    private int punchReload = 0;
-    private int punchReloadTime = 10;
-    private float punchForce = 100;
-    private float punchPosition = 1000;
-    private float punchStart = 0.01f;
-    private float punchEnd = 2;
     
-    public float CurrentSwing {
-        get { return swingPosition; }
-    }
+    private Vector3 punchOffset = new Vector3(0.95f, -0.6f, 0);
+    private Vector3 swingOffset = new Vector3(0.85f, -0.6f, 0);
+    
+    public bool swinging = false;
+    public bool punching = false;
 
     public void Awake() {
         da = GetComponent<DwarfAni>();
+    }
+
+    public void PunchHit() {
+        punching = false;
+
+        foreach (RaycastHit hit in Physics.RaycastAll(transform.position + new Vector3(punchOffset.x * da.Direction, punchOffset.y), new Vector3(punchOffset.x * da.Direction), 0.2f)) {
+            Debug.Log(hit.rigidbody.gameObject.name);
+        }
+    }
+    
+    public void SwingHit() {
+        swinging = false;
+
+
     }
     
     public void Punch() {
         if (!CanAttack()) {
             return;
         }
-        punchPosition = punchStart;
-        punchReload = punchReloadTime;
+        punching = true;
     }
     
-    public bool IsPunching() {
-        return punchPosition <= punchEnd;
-    }
-
     public void Swing() {
         if (!CanAttack()) {
             return;
         }
-        swingPosition = swingStart;
-        swingReload = swingReloadTime;
+        swinging = true;
     }
-
+    
     public bool IsSwinging() {
-        return swingPosition <= swingEnd;
+        return swinging;
+    }
+    
+    public bool IsPunching() {
+        return punching;
     }
 
     public bool CanAttack() {
-        return swingReload == 0 && punchReload == 0 && swingPosition >= swingEnd && punchPosition >= punchEnd;
-    }
-    
-    public void FixedUpdate() {
-        if (swingReload > 0) {
-            swingReload--;
-        }
-        if (punchReload > 0) {
-            punchReload--;
-        }
-        da.Swinging = false;
-        da.Punching = false;
-        if (swingPosition <= swingEnd) {
-            da.Swinging = true;
-            /*
-            if (swingPosition <= swingStart2) {
-                foreach (RaycastHit raycastHit in Physics.RaycastAll(transform.position + center, GetDirection(), swingRange)) {
-                    SendImpact(raycastHit, swingForce);
-                }
-            }
-            */
-            
-            foreach (RaycastHit raycastHit in Physics.RaycastAll(transform.position + center, Vector3.right * da.Direction, swingPosition)) {
-                SendImpact(raycastHit, punchForce);
-            }
-            swingPosition += 0.2f;
-        } else if (punchPosition <= punchEnd) {
-            da.Punching = true;
-            foreach (RaycastHit raycastHit in Physics.RaycastAll(transform.position + center, Vector3.right * da.Direction, punchPosition)) {
-                SendImpact(raycastHit, punchForce);
-            }
-            punchPosition += 0.2f;
-        }
-    }
-
-    public void SendImpact(RaycastHit raycastHit, float force) {
-        Vector3 impactDirection;
-        if (raycastHit.transform.position.x > transform.position.x) {
-            impactDirection = Vector3.right;
-        } else {
-            impactDirection = Vector3.left;
-        }
-        raycastHit.transform.gameObject.SendMessage("AddImpact", new Impact(impactDirection, force, gameObject), SendMessageOptions.DontRequireReceiver);
-    }
-
-    public Vector3 GetDirection() {
-        Vector3 position = transform.position;
-        position.x = Mathf.Cos(swingPosition) / 2;
-        position.y = Mathf.Sin(-swingPosition) / 2 - 0.3f;
-        position.x *= da.Direction;
-        position = transform.position + position;
-        
-        return (position - (transform.position + center)).normalized;
+        return !punching && !swinging;
     }
 
     public void OnDrawGizmos() {
-        if (da) {
-            if (IsSwiging()) {
-                //Gizmos.DrawRay(transform.position + center, GetDirection());
-                Gizmos.DrawRay(transform.position + center, Vector3.right * swingPosition * da.Direction);
-            }
-            if (IsPunching()) {
-                Gizmos.DrawRay(transform.position + center, Vector3.right * punchPosition * da.Direction);
-            }
-        }
-    }
-
-    public bool IsSwiging() {
-        return swingPosition <= swingEnd && swingPosition >= swingStart2;
+        Gizmos.color = Color.red;
+        Gizmos.DrawSphere(transform.position + new Vector3(punchOffset.x * da.Direction, punchOffset.y), 0.2f);
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawSphere(transform.position + new Vector3(swingOffset.x * da.Direction, swingOffset.y), 0.2f);
     }
 
 }

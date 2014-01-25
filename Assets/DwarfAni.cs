@@ -4,6 +4,7 @@ using System.Collections;
 public class DwarfAni : MonoBehaviour {
     
     private Animator animator;
+    private MeleeAttack melee;
     
     private float lastX = 0;
     private float scale;
@@ -23,8 +24,9 @@ public class DwarfAni : MonoBehaviour {
     }
 
     public void Start() {
-        scale = transform.localScale.x;
         animator = GetComponent<Animator>();
+        melee = GetComponent<MeleeAttack>();
+        scale = transform.localScale.x;
         distToGround = collider.bounds.extents.y;
     }
     
@@ -60,8 +62,8 @@ public class DwarfAni : MonoBehaviour {
             animator.SetBool("Idle", false);
             animator.SetBool("Walk", false);
             animator.SetBool("Jump", true);
-            animator.SetBool("Punch", Punching);
-            animator.SetBool("Swing", Swinging);
+            animator.SetBool("Punch", melee.IsPunching());
+            animator.SetBool("Swing", melee.IsSwinging());
         }
     }
     
@@ -70,8 +72,8 @@ public class DwarfAni : MonoBehaviour {
             animator.SetBool("Idle", false);
             animator.SetBool("Walk", true);
             animator.SetBool("Jump", false);
-            animator.SetBool("Punch", Punching);
-            animator.SetBool("Swing", Swinging);
+            animator.SetBool("Punch", melee.IsPunching());
+            animator.SetBool("Swing", melee.IsSwinging());
         }
     }
     
@@ -80,8 +82,8 @@ public class DwarfAni : MonoBehaviour {
             animator.SetBool("Idle", true);
             animator.SetBool("Walk", false);
             animator.SetBool("Jump", false);
-            animator.SetBool("Punch", Punching);
-            animator.SetBool("Swing", Swinging);
+            animator.SetBool("Punch", melee.IsPunching());
+            animator.SetBool("Swing", melee.IsSwinging());
         }
     }
     

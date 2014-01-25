@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class PlayerAnimator : MonoBehaviour {
-
+    /*
 	private Animator animator;
 	private MeleeAttack meleeAttack;
 
@@ -15,4 +15,5 @@ public class PlayerAnimator : MonoBehaviour {
 		animator.SetFloat("swing", meleeAttack.CurrentSwing);
 		Debug.Log (meleeAttack.CurrentSwing);
 	}
+ */   
 }
