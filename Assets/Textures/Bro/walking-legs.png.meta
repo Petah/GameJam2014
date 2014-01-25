@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 44379c17c779d4c439b0500a9bab4aeb
+guid: 56cd6e7ec7570574ba5f8f395fa39ad8
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -41,7 +41,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: walkingbro_0
+    - name: walking-legs_0
       rect:
         serializedVersion: 2
         x: 0
@@ -50,7 +50,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: walkingbro_1
+    - name: walking-legs_1
       rect:
         serializedVersion: 2
         x: 64
@@ -59,7 +59,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: walkingbro_2
+    - name: walking-legs_2
       rect:
         serializedVersion: 2
         x: 128
@@ -68,7 +68,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: walkingbro_3
+    - name: walking-legs_3
       rect:
         serializedVersion: 2
         x: 192
@@ -77,7 +77,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: walkingbro_4
+    - name: walking-legs_4
       rect:
         serializedVersion: 2
         x: 256
@@ -86,7 +86,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: walkingbro_5
+    - name: walking-legs_5
       rect:
         serializedVersion: 2
         x: 320
@@ -95,7 +95,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: walkingbro_6
+    - name: walking-legs_6
       rect:
         serializedVersion: 2
         x: 384
@@ -104,7 +104,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: walkingbro_7
+    - name: walking-legs_7
       rect:
         serializedVersion: 2
         x: 448

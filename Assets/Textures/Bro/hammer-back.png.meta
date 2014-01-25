@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 44379c17c779d4c439b0500a9bab4aeb
+guid: 1e5ca8dfeb770784dad814a5ed8137d8
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -41,7 +41,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: walkingbro_0
+    - name: hammer-back_0
       rect:
         serializedVersion: 2
         x: 0
@@ -50,7 +50,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: walkingbro_1
+    - name: hammer-back_1
       rect:
         serializedVersion: 2
         x: 64
@@ -59,7 +59,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: walkingbro_2
+    - name: hammer-back_2
       rect:
         serializedVersion: 2
         x: 128
@@ -68,7 +68,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: walkingbro_3
+    - name: hammer-back_3
       rect:
         serializedVersion: 2
         x: 192
@@ -77,7 +77,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: walkingbro_4
+    - name: hammer-back_4
       rect:
         serializedVersion: 2
         x: 256
@@ -86,7 +86,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: walkingbro_5
+    - name: hammer-back_5
       rect:
         serializedVersion: 2
         x: 320
@@ -95,7 +95,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: walkingbro_6
+    - name: hammer-back_6
       rect:
         serializedVersion: 2
         x: 384
@@ -104,10 +104,46 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: walkingbro_7
+    - name: hammer-back_7
       rect:
         serializedVersion: 2
         x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: hammer-back_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: hammer-back_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: hammer-back_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: hammer-back_11
+      rect:
+        serializedVersion: 2
+        x: 704
         y: 0
         width: 64
         height: 64

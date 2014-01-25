@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 44379c17c779d4c439b0500a9bab4aeb
+guid: dfed62b68137b274aaad49b3674b2acf
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -41,7 +41,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: walkingbro_0
+    - name: punch-legs 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -50,7 +50,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: walkingbro_1
+    - name: punch-legs 1_1
       rect:
         serializedVersion: 2
         x: 64
@@ -59,7 +59,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: walkingbro_2
+    - name: punch-legs 1_2
       rect:
         serializedVersion: 2
         x: 128
@@ -68,7 +68,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: walkingbro_3
+    - name: punch-legs 1_3
       rect:
         serializedVersion: 2
         x: 192
@@ -77,37 +77,10 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: walkingbro_4
+    - name: punch-legs 1_4
       rect:
         serializedVersion: 2
         x: 256
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-    - name: walkingbro_5
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-    - name: walkingbro_6
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-    - name: walkingbro_7
-      rect:
-        serializedVersion: 2
-        x: 448
         y: 0
         width: 64
         height: 64
