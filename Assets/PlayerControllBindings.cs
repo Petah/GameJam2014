@@ -16,15 +16,15 @@ public class PlayerControllBindings : MonoBehaviour {
     private GameObject[] players = new GameObject[4];
 
     public void Start() {
-        Debug.Log("test");
-        CreatePlayer(1);
-        CreatePlayer(2);
-        CreatePlayer(3);
-        CreatePlayer(4);
+        GameObject[] spawns = GameObject.FindGameObjectsWithTag("Spawn");
+        CreatePlayer(1, spawns[0]);
+        CreatePlayer(2, spawns[1]);
+        CreatePlayer(3, spawns[2]);
+        CreatePlayer(4, spawns[3]);
     }
 
-    public void CreatePlayer(int player) {
-        players[player - 1] = Instantiate(playerPrefab, new Vector3(0f, 10000000f, 0f), Quaternion.identity) as GameObject;
+    public void CreatePlayer(int player, GameObject spawn) {
+        players[player - 1] = Instantiate(playerPrefab, spawn.transform.position, Quaternion.identity) as GameObject;
         FPSInputController controller = players[player - 1].GetComponent<FPSInputController>();
         controller.horizontal = horizontal + player;
         controller.vertical = vertical + player;

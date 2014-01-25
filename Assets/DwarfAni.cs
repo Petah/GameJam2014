@@ -8,14 +8,24 @@ public class DwarfAni : MonoBehaviour {
     private float lastX = 0;
     private float scale;
     private float direction = 1;
-
+    private float distToGround;
+    
     public float Direction {
         get { return direction; }
+    }
+    public bool Swinging {
+        get;
+        set;
+    }
+    public bool Punching {
+        get;
+        set;
     }
 
     public void Start() {
         scale = transform.localScale.x;
         animator = GetComponent<Animator>();
+        distToGround = collider.bounds.extents.y;
     }
     
     public void FixedUpdate() {
@@ -29,7 +39,8 @@ public class DwarfAni : MonoBehaviour {
             localScale.x = scale;
         }
         transform.localScale = localScale;
-        if (Physics.Raycast(transform.position + (Vector3.down * 1.2f), Vector3.down * 0.1f)) {
+
+        if (!GetComponent<CharacterMotor>().IsGrounded()) {
             SetJump();
         } else if (lastX - transform.position.x < -0.002 || lastX - transform.position.x > 0.002) {
             SetWalk();
@@ -40,12 +51,17 @@ public class DwarfAni : MonoBehaviour {
         // Record last x
         lastX = transform.position.x;
     }
-    
+    public bool IsGrounded() {
+        return Physics.Raycast(transform.position, -Vector3.up, distToGround + 0.2f);
+    }
+
     public void SetJump() {
         foreach (Animator animator in gameObject.GetComponentsInChildren<Animator>()) {
             animator.SetBool("Idle", false);
             animator.SetBool("Walk", false);
             animator.SetBool("Jump", true);
+            animator.SetBool("Punch", Punching);
+            animator.SetBool("Swing", Swinging);
         }
     }
     
@@ -54,6 +70,8 @@ public class DwarfAni : MonoBehaviour {
             animator.SetBool("Idle", false);
             animator.SetBool("Walk", true);
             animator.SetBool("Jump", false);
+            animator.SetBool("Punch", Punching);
+            animator.SetBool("Swing", Swinging);
         }
     }
     
@@ -62,6 +80,8 @@ public class DwarfAni : MonoBehaviour {
             animator.SetBool("Idle", true);
             animator.SetBool("Walk", false);
             animator.SetBool("Jump", false);
+            animator.SetBool("Punch", Punching);
+            animator.SetBool("Swing", Swinging);
         }
     }
     

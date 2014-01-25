@@ -609,7 +609,7 @@ public class CharacterMotor : MonoBehaviour
         return (movement.collisionFlags & CollisionFlags.CollidedAbove) != 0;
     }
     
-    bool IsGrounded()
+    public bool IsGrounded()
     {
         return grounded;
     }

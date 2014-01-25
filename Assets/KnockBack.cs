@@ -16,7 +16,13 @@ public class KnockBack : MonoBehaviour {
         if (incoming.direction.y < 0) {
             incoming.direction.y = -incoming.direction.y; // reflect down force on the ground
         }
-        impact += incoming.direction.normalized * incoming.force / mass;
+        Vector3 direction;
+        if (incoming.from.transform.position.x > transform.position.x) {
+            direction = Vector3.left;
+        } else {
+            direction = Vector3.right;
+        }
+        impact += direction;//incoming.direction.normalized * incoming.force / mass;
     }
     
     public void Update() {

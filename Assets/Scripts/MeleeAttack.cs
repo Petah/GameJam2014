@@ -5,15 +5,16 @@ public class MeleeAttack : MonoBehaviour {
 
     private DwarfAni da;
 
-    private Vector3 center = new Vector3(0, -0.3f, 0);
+    private Vector3 center = new Vector3(0, -0.6f, 0);
 
     private int swingReload = 0;
     private int swingReloadTime = 30;
-    private float swingForce = 100;
+    private float swingForce = 20;
     private float swingPosition = 1000;
-    private float swingStart = -1.4f;
+    private float swingStart = -3.5f;
+    private float swingStart2 = -1.5f;
     private float swingEnd = 1.6f;
-    private float swingRange = 1.2f;
+    private float swingRange = 2.2f;
 
     private int punchReload = 0;
     private int punchReloadTime = 10;
@@ -65,16 +66,28 @@ public class MeleeAttack : MonoBehaviour {
         if (punchReload > 0) {
             punchReload--;
         }
+        da.Swinging = false;
+        da.Punching = false;
         if (swingPosition <= swingEnd) {
-            foreach (RaycastHit raycastHit in Physics.RaycastAll(transform.position + center, GetDirection(), swingRange)) {
-                SendImpact(raycastHit, swingForce);
+            da.Swinging = true;
+            /*
+            if (swingPosition <= swingStart2) {
+                foreach (RaycastHit raycastHit in Physics.RaycastAll(transform.position + center, GetDirection(), swingRange)) {
+                    SendImpact(raycastHit, swingForce);
+                }
             }
-                swingPosition += 0.3f;
+            */
+            
+            foreach (RaycastHit raycastHit in Physics.RaycastAll(transform.position + center, Vector3.right * da.Direction, swingPosition)) {
+                SendImpact(raycastHit, punchForce);
+            }
+            swingPosition += 0.2f;
         } else if (punchPosition <= punchEnd) {
+            da.Punching = true;
             foreach (RaycastHit raycastHit in Physics.RaycastAll(transform.position + center, Vector3.right * da.Direction, punchPosition)) {
                 SendImpact(raycastHit, punchForce);
             }
-            punchPosition += 0.3f;
+            punchPosition += 0.2f;
         }
     }
 
@@ -101,7 +114,8 @@ public class MeleeAttack : MonoBehaviour {
     public void OnDrawGizmos() {
         if (da) {
             if (IsSwiging()) {
-                Gizmos.DrawRay(transform.position + center, GetDirection() * swingRange);
+                //Gizmos.DrawRay(transform.position + center, GetDirection());
+                Gizmos.DrawRay(transform.position + center, Vector3.right * swingPosition * da.Direction);
             }
             if (IsPunching()) {
                 Gizmos.DrawRay(transform.position + center, Vector3.right * punchPosition * da.Direction);
@@ -110,7 +124,7 @@ public class MeleeAttack : MonoBehaviour {
     }
 
     public bool IsSwiging() {
-        return swingPosition <= swingEnd;
+        return swingPosition <= swingEnd && swingPosition >= swingStart2;
     }
 
 }
