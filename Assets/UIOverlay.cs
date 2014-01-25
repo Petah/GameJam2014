@@ -76,10 +76,22 @@ public class UIOverlay : MonoBehaviour {
         GUI.DrawTexture(new Rect(135 + 15 * 2, 41, 26, 28), kill);
 
         GUI.DrawTexture(new Rect(Screen.width - width, 0, width, height), player3Head);
+		GUI.DrawTexture(new Rect(90, 39, 54, -52), item);
+		GUI.DrawTexture(new Rect(135, 41, 26, 28), kill);
+		GUI.DrawTexture(new Rect(135 + 15, 41, 26, 28), kill);
+		GUI.DrawTexture(new Rect(135 + 15 * 2, 41, 26, 28), kill);
 
         GUI.DrawTexture(new Rect(0, Screen.height - height, width, height), player2Head);
+		GUI.DrawTexture(new Rect(90, 39, 54, 52), item);
+		GUI.DrawTexture(new Rect(135, 41, 26, 28), kill);
+		GUI.DrawTexture(new Rect(135 + 15, 41, 26, 28), kill);
+		GUI.DrawTexture(new Rect(135 + 15 * 2, 41, 26, 28), kill);
 
         GUI.DrawTexture(new Rect(Screen.width - width, Screen.height - height, width, height), player1Head);
+		GUI.DrawTexture(new Rect(90, 39, 54, 52), item);
+		GUI.DrawTexture(new Rect(135, 41, 26, 28), kill);
+		GUI.DrawTexture(new Rect(135 + 15, 41, 26, 28), kill);
+		GUI.DrawTexture(new Rect(135 + 15 * 2, 41, 26, 28), kill);
 
 
 

@@ -24,6 +24,7 @@ public class LavaDeath : MonoBehaviour {
             transform.position = position;
             respawning = 100;
             gameObject.SendMessage("Death", null, SendMessageOptions.DontRequireReceiver);
+		
         }
 	}
 

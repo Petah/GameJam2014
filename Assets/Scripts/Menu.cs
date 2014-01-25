@@ -24,7 +24,7 @@ public class Menu : MonoBehaviour
 			))
 		{
 			// On Click, load the first level.
-			Application.LoadLevel("Stage1"); // "Stage1" is the scene name
+			Application.LoadLevel("MikeTest"); // "Stage1" is the scene name
 		}
 	}
 }
