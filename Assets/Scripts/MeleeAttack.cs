@@ -19,7 +19,7 @@ public class MeleeAttack : MonoBehaviour {
     private int punchReloadTime = 10;
     private float punchForce = 100;
     private float punchPosition = 1000;
-    private float punchStart = 0;
+    private float punchStart = 0.01f;
     private float punchEnd = 2;
     
     public float CurrentSwing {
