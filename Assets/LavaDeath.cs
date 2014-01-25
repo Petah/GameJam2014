@@ -15,8 +15,8 @@ public class LavaDeath : MonoBehaviour {
             respawning--;
             transform.position = new Vector3(-10000, -10000);
         } else if (respawning == 0) {
-            // Respawn at top of map
-            transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y + 5);
+            GameObject respawn = GameObject.FindGameObjectWithTag("Respawn");
+            transform.position = new Vector3(0, 10000000, 0);
             respawning = -1;
         } else if (transform.position.y < Camera.main.transform.position.y - 4) {
             Vector3 position = transform.position;
