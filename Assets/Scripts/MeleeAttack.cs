@@ -5,7 +5,7 @@ public class MeleeAttack : MonoBehaviour {
 
     private DwarfAni da;
     
-    private Vector3 punchOffset = new Vector3(0.95f, -0.6f, 0);
+    private Vector3 punchOffset = new Vector3(0.3f, -0.6f, 0);
     private Vector3 swingOffset = new Vector3(0.85f, -0.6f, 0);
     
     public bool swinging = false;
@@ -18,15 +18,27 @@ public class MeleeAttack : MonoBehaviour {
     public void PunchHit() {
         punching = false;
 
-        foreach (RaycastHit hit in Physics.RaycastAll(transform.position + new Vector3(punchOffset.x * da.Direction, punchOffset.y), new Vector3(punchOffset.x * da.Direction), 0.2f)) {
-            Debug.Log(hit.rigidbody.gameObject.name);
+        foreach (RaycastHit hit in Physics.RaycastAll(
+                    transform.position + new Vector3(punchOffset.x * da.Direction, punchOffset.y), 
+                    new Vector3(punchOffset.x * da.Direction, 0), 
+                    1f
+            )) {
+            Debug.Log(hit.transform.gameObject.name);
+            Debug.Log(Time.time);
         }
     }
     
     public void SwingHit() {
         swinging = false;
 
-
+        foreach (RaycastHit hit in Physics.RaycastAll(
+            transform.position + new Vector3(punchOffset.x * da.Direction, punchOffset.y), 
+            new Vector3(punchOffset.x * da.Direction, 0), 
+            1f
+            )) {
+            Debug.Log(hit.transform.gameObject.name);
+            Debug.Log(Time.time);
+        }
     }
     
     public void Punch() {
@@ -56,10 +68,18 @@ public class MeleeAttack : MonoBehaviour {
     }
 
     public void OnDrawGizmos() {
-        Gizmos.color = Color.red;
-        Gizmos.DrawSphere(transform.position + new Vector3(punchOffset.x * da.Direction, punchOffset.y), 0.2f);
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawSphere(transform.position + new Vector3(swingOffset.x * da.Direction, swingOffset.y), 0.2f);
+        if (da) {
+            Gizmos.DrawRay(
+                transform.position + new Vector3(punchOffset.x * da.Direction, punchOffset.y), 
+                new Vector3(punchOffset.x * da.Direction, 0) / 2
+            );
+            return;
+
+            Gizmos.color = Color.red;
+            Gizmos.DrawSphere(transform.position + new Vector3(punchOffset.x * da.Direction, punchOffset.y), 0.2f);
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawSphere(transform.position + new Vector3(swingOffset.x * da.Direction, swingOffset.y), 0.2f);
+        }
     }
 
 }
