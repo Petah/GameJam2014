@@ -2,7 +2,15 @@
 using System.Collections;
 
 public class UIOverlay : MonoBehaviour {
+
+    public Texture player1Head;
+    public Texture player2Head;
+    public Texture player3Head;
+    public Texture player4Head;
+    public Texture kill;
+    public Texture item;
     
+    /*
     public Texture player1Head;
     public Texture player2Head;
     public Texture player3Head;
@@ -19,8 +27,10 @@ public class UIOverlay : MonoBehaviour {
     public KillCounter player2KillCounter;
     public KillCounter player3KillCounter;
     public KillCounter player4KillCounter;
+    */
 
     public void Start() {
+        /*
         foreach (GameObject gameObject in GameObject.FindGameObjectsWithTag("Player")) {
             if (gameObject.name == "Player1") {
                 player1 = gameObject;
@@ -40,8 +50,10 @@ public class UIOverlay : MonoBehaviour {
                 player4KillCounter = player4.GetComponent<KillCounter>();
             }
         }
+        */
     }
-
+    
+    /*
     public string GetGUIText(LavaDeath respawn, KillCounter killCounter) {
         string result = "";
         if (respawn && respawn.Respawning > 0) {
@@ -52,9 +64,26 @@ public class UIOverlay : MonoBehaviour {
         }
         return result;
     }
+    */
 
     public void OnGUI() {
-        return;
+        int width = 136;
+        int height = 136;
+        GUI.DrawTexture(new Rect(0, 0, width, height), player4Head);
+        GUI.DrawTexture(new Rect(90, 39, 54, 52), item);
+        GUI.DrawTexture(new Rect(135, 41, 26, 28), kill);
+        GUI.DrawTexture(new Rect(135 + 15, 41, 26, 28), kill);
+        GUI.DrawTexture(new Rect(135 + 15 * 2, 41, 26, 28), kill);
+
+        GUI.DrawTexture(new Rect(Screen.width - width, 0, width, height), player3Head);
+
+        GUI.DrawTexture(new Rect(0, Screen.height - height, width, height), player2Head);
+
+        GUI.DrawTexture(new Rect(Screen.width - width, Screen.height - height, width, height), player1Head);
+
+
+
+        /*
         int width = 150;
         GUI.Box(new Rect(0, 0, width, 50), GetGUIText(player1Respawn, player1KillCounter));
         GUI.Box(new Rect(Screen.width - width, 0, width, 50), GetGUIText(player2Respawn, player2KillCounter));
@@ -88,6 +117,7 @@ public class UIOverlay : MonoBehaviour {
                 GUI.DrawTexture(new Rect(Screen.width - width + x, 15, Screen.height - 50, 31), player1Head);
             }
         }
+        */
     }
 
 }
