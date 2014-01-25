@@ -3,7 +3,7 @@ using System.Collections;
 
 public class CameraMove : MonoBehaviour {
     
-    public float speed = 1.0F;
+    private float speed = 0;//0.7f;
     private Vector3 startMarker;
     private Vector3 endMarker;
     private float startTime;

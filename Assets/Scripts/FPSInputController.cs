@@ -14,14 +14,14 @@ public class FPSInputController : MonoBehaviour {
     private Weapon weapon;
     private MeleeAttack melee;
     private HoldingPickup holdingPickup;
-    private FlipSprite flipSprite;
+    private Direction playerDirection;
 	
 	public void Awake() {
         motor = GetComponent<CharacterMotor>();
         weapon = GetComponent<Weapon>();
         melee = GetComponent<MeleeAttack>();
         holdingPickup = GetComponent<HoldingPickup>();
-        flipSprite = transform.Find("Sprite").GetComponent<FlipSprite>();
+        playerDirection = transform.GetComponent<Direction>();
 	}
 	
     public void Update() {
@@ -51,7 +51,7 @@ public class FPSInputController : MonoBehaviour {
 		
 		if (Input.GetButton(shoot)) {
             if (holdingPickup.IsHolding()) {
-                holdingPickup.Throw(transform.position, flipSprite.Direction);
+                holdingPickup.Throw(transform.position, playerDirection.Dir);
             }
 			if (weapon != null && weapon.CanAttack) {
 				weapon.Attack(true);

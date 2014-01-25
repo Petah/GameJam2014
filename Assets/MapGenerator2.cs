@@ -31,14 +31,16 @@ public class MapGenerator2 : MonoBehaviour {
         int platform = 0;
         while (x < maxX) {
             if (platform > 0) {
-                Instantiate(wallPrefab, new Vector3(x, currentY, 0), Quaternion.identity);
+                Transform wall = Instantiate(wallPrefab, new Vector3(x, currentY, 0), Quaternion.identity) as Transform;
+                wall.parent = GameObject.FindGameObjectWithTag("WallContainer").transform;
                 platform--;
             } else if (Random.value < 0.2f) {
                 gap = Random.Range(minGapSize, maxGapSize);
             } else if (gap > 0) {
                 gap--;
             } else {
-                Instantiate(wallPrefab, new Vector3(x, currentY, 0), Quaternion.identity);
+                Transform wall = Instantiate(wallPrefab, new Vector3(x, currentY, 0), Quaternion.identity) as Transform;
+                wall.parent = GameObject.FindGameObjectWithTag("WallContainer").transform;
                 platform = Random.Range(minPlatformSize, maxPlatformSize);
                 if (x > -6 && x < 6 && Random.value < 0.1f) {
                     Instantiate(pickupPrefab, new Vector3(x, currentY + blockHeight, 0), Quaternion.identity);
