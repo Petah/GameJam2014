@@ -58,11 +58,14 @@ public class FPSInputController : MonoBehaviour {
 				weapon.Attack(true);
 				//add sound in here later
 			}
-		}
-		
+        }
+        
         if (Input.GetButton(attack)) {
-			Debug.Log ("Attack");
-            melee.Attack();
+            melee.Swing();
+        }
+        
+        if (Input.GetButton(shoot)) {
+            melee.Punch();
         }
         //Input.GetButton(shoot);
         //Input.GetButton(taunt);
