@@ -5,12 +5,16 @@ public class MeleeAttack : MonoBehaviour {
 
     private FlipSprite flipSprite;
     private float i;
-    private float swing = 0.6f;
+    private float swing = 3.6f;
     private float range = 1.2f;
     private Vector3 center = new Vector3(0, -0.3f, 0);
     private Vector3 direction = Vector3.zero;
     private int reload = 0;
     
+	public float CurrentSwing {
+		get { return i; }
+	}
+
     public void Awake() {
         flipSprite = transform.Find("Sprite").GetComponent<FlipSprite>();
     }

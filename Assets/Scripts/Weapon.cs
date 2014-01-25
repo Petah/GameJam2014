@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public class Weapon : MonoBehaviour {
-	
+/// <summary>
+/// Launch projectile
+/// </summary>
+public class Weapon : MonoBehaviour
+{
 	//--------------------------------
 	// 1 - Designer variables
 	//--------------------------------
@@ -10,7 +12,7 @@ public class Weapon : MonoBehaviour {
 	/// <summary>
 	/// Projectile prefab for shooting
 	/// </summary>
-	public Transform Arrow;
+	public Transform shotPrefab;
 	
 	/// <summary>
 	/// Cooldown in seconds between two shots
@@ -49,8 +51,8 @@ public class Weapon : MonoBehaviour {
 		{
 			shootCooldown = shootingRate;
 			
-			// Create a new shot
-			var shotTransform = Instantiate(Arrow) as Transform;
+			// Create a new shot 
+			var shotTransform = Instantiate(shotPrefab) as Transform;
 			
 			// Assign position
 			shotTransform.position = transform.position;
@@ -72,7 +74,7 @@ public class Weapon : MonoBehaviour {
 	}
 	
 	/// <summary>
-	/// Is the weapon ready to create a new projectile?
+	/// Is the wepaon ready to create a new projectile?
 	/// </summary>
 	public bool CanAttack
 	{

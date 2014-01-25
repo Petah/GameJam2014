@@ -33,7 +33,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400004}
   m_Layer: 0
-  m_Name: First Person Controller
+  m_Name: Testing
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

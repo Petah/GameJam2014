@@ -53,6 +53,7 @@ public class FPSInputController : MonoBehaviour {
 		}
 		
         if (Input.GetButton(attack)) {
+			Debug.Log ("Attack");
             melee.Attack();
         }
         //Input.GetButton(shoot);
