@@ -47,10 +47,12 @@ public class RespawnUI : MonoBehaviour {
 
     public string GetGUIText(LavaDeath respawn, KillCounter killCounter) {
         string result = "";
-        if (respawn.Respawning > 0) {
+		if (respawn && respawn.Respawning > 0) {
             result += "Respawning in: " + respawn.Respawning;
         }
-        result += "Kill counter: " + killCounter.KillCounts.Count;
+		if (killCounter) {
+			result += "Kill counter: " + killCounter.KillCounts.Count;
+		}
         return result;
     }
 
