@@ -13,6 +13,7 @@ public class Pickup : MonoBehaviour {
         foreach (GameObject player in players) {
             float distance = Vector3.Distance(transform.position, player.transform.position);
             if (distance < 1) {
+                player.GetComponent<HoldingPickup>().Holding = true;
                 Destroy(gameObject);
             }
         }
