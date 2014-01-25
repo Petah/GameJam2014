@@ -35,10 +35,8 @@ public class DwarfAni : MonoBehaviour {
         animator.SetFloat("swing", 7f);
 
         if (lastX - transform.position.x < -0.01 || lastX - transform.position.x > 0.01) {
-            Debug.Log(true);
             animator.SetBool("move", true);
         } else {
-            Debug.Log(false);
             animator.SetBool("move", false);
         }
 
