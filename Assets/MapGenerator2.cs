@@ -34,7 +34,7 @@ public class MapGenerator2 : MonoBehaviour {
                 Transform wall = Instantiate(wallPrefab, new Vector3(x, currentY, 0), Quaternion.identity) as Transform;
                 wall.parent = GameObject.FindGameObjectWithTag("WallContainer").transform;
                 platform--;
-            } else if (Random.value < 0.2f) {
+            } else if (Random.value < 0.25f) {
                 gap = Random.Range(minGapSize, maxGapSize);
             } else if (gap > 0) {
                 gap--;

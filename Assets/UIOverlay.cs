@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RespawnUI : MonoBehaviour {
+public class UIOverlay : MonoBehaviour {
     
     public Texture player1Head;
     public Texture player2Head;
@@ -54,6 +54,7 @@ public class RespawnUI : MonoBehaviour {
     }
 
     public void OnGUI() {
+        return;
         int width = 150;
         GUI.Box(new Rect(0, 0, width, 50), GetGUIText(player1Respawn, player1KillCounter));
         GUI.Box(new Rect(Screen.width - width, 0, width, 50), GetGUIText(player2Respawn, player2KillCounter));

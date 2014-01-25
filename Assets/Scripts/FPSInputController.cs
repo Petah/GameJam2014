@@ -9,6 +9,7 @@ public class FPSInputController : MonoBehaviour {
     public string attack;
     public string shoot;
     public string taunt;
+    public string run;
 
     private CharacterMotor motor;
     private Weapon weapon;

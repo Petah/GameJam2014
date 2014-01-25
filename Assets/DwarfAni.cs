@@ -3,13 +3,15 @@ using System.Collections;
 
 public class DwarfAni : MonoBehaviour {
     
-    public Transform follow;
-
     private Animator animator;
     
     private float lastX = 0;
     private float scale;
     private float direction = 1;
+
+    public float Direction {
+        get { return direction; }
+    }
 
     public void Start() {
         scale = transform.localScale.x;
@@ -17,9 +19,6 @@ public class DwarfAni : MonoBehaviour {
     }
     
     public void Update () {
-        // Follow
-        transform.position = follow.position;
-    
         // Flip sprite
         Vector3 localScale = transform.localScale;
         if (transform.position.x < lastX) {

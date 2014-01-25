@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MeleeAttack : MonoBehaviour {
 
-    private Direction playerDirection;
+    private DwarfAni da;
     private float i;
     private float swing = 3.6f;
     private float range = 1.2f;
@@ -16,7 +16,7 @@ public class MeleeAttack : MonoBehaviour {
 	}
 
     public void Awake() {
-        playerDirection = GetComponent<Direction>();
+        da = GetComponent<DwarfAni>();
     }
 
     public void Attack() {
@@ -52,14 +52,14 @@ public class MeleeAttack : MonoBehaviour {
         Vector3 position = transform.position;
         position.x = Mathf.Cos(i) / 2;
         position.y = Mathf.Sin(-i) / 2 - 0.3f;
-        position.x *= playerDirection.Dir;
+        position.x *= da.Direction;
         position = transform.position + position;
         
         return (position - (transform.position + center)).normalized;
     }
 
     public void OnDrawGizmos() {
-        if (i <= swing && playerDirection) {
+        if (i <= swing && da) {
             Gizmos.DrawRay(transform.position + center, GetDirection() * range);
         }
     }
