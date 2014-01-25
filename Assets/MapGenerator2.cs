@@ -20,11 +20,11 @@ public class MapGenerator2 : MonoBehaviour {
     
     private float currentY;
     
-    void Start() {
+    public void Start() {
         currentY = 0;
     }
     
-    void CreateRow (float y) {
+    public void CreateRow (float y) {
         float maxX = 8;
         float x = -8;
         int gap = 0;
@@ -45,6 +45,7 @@ public class MapGenerator2 : MonoBehaviour {
                 if (x > -6 && x < 6 && Random.value < 0.1f) {
                     Instantiate(pickupPrefab, new Vector3(x, currentY + blockHeight, 0), Quaternion.identity);
                 } else if (x > -6 && x < 6 && Random.value < 0.1f) {
+                    Debug.Log("Player");
                     foreach (GameObject player in GameObject.FindGameObjectsWithTag("Player")) {
                         if (player.transform.position.y > 100000) {
                             player.transform.position = new Vector3(x, currentY + (blockHeight * 2), 0);

@@ -16,6 +16,7 @@ public class PlayerControllBindings : MonoBehaviour {
     private GameObject[] players = new GameObject[4];
 
     public void Start() {
+        Debug.Log("test");
         CreatePlayer(1);
         CreatePlayer(2);
         CreatePlayer(3);
@@ -23,8 +24,8 @@ public class PlayerControllBindings : MonoBehaviour {
     }
 
     public void CreatePlayer(int player) {
-        players[player] = Instantiate(playerPrefab, Vector3.zero, Quaternion.identity) as GameObject;
-        FPSInputController controller = players[player].GetComponent<FPSInputController>();
+        players[player - 1] = Instantiate(playerPrefab, Vector3.zero, Quaternion.identity) as GameObject;
+        FPSInputController controller = players[player - 1].GetComponent<FPSInputController>();
         controller.horizontal = horizontal + player;
         controller.vertical = vertical + player;
         controller.jump = a + player;
