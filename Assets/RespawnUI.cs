@@ -2,8 +2,11 @@
 using System.Collections;
 
 public class RespawnUI : MonoBehaviour {
-
+    
     public Texture player1Head;
+    public Texture player2Head;
+    public Texture player3Head;
+    public Texture player4Head;
 
     public GameObject player1;
     public GameObject player2;
@@ -58,10 +61,26 @@ public class RespawnUI : MonoBehaviour {
         GUI.Box(new Rect(0,Screen.height - 50, width, 50), GetGUIText(player3Respawn, player3KillCounter));
         GUI.Box(new Rect(Screen.width - width, Screen.height - 50, width, 50), GetGUIText(player4Respawn, player4KillCounter));
 
-        int x = 0;
+        int x;
+        x = 0;
         foreach (GameObject gameObject in player1KillCounter.KillCounts) {
             x += 15;
             GUI.DrawTexture(new Rect(x, 15, 15, 31), player1Head);
+        }
+        x = 0;
+        foreach (GameObject gameObject in player2KillCounter.KillCounts) {
+            x += 15;
+            GUI.DrawTexture(new Rect(Screen.width - width + x, 15, 15, 31), player1Head);
+        }
+        x = 0;
+        foreach (GameObject gameObject in player3KillCounter.KillCounts) {
+            x += 15;
+            GUI.DrawTexture(new Rect(x, 15, Screen.height - 50, 31), player1Head);
+        }
+        x = 0;
+        foreach (GameObject gameObject in player4KillCounter.KillCounts) {
+            x += 15;
+            GUI.DrawTexture(new Rect(Screen.width - width + x, 15, Screen.height - 50, 31), player1Head);
         }
     }
 
