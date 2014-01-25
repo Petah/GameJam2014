@@ -13,11 +13,15 @@ public class FPSInputController : MonoBehaviour {
     private CharacterMotor motor;
     private Weapon weapon;
     private MeleeAttack melee;
+    private HoldingPickup holdingPickup;
+    private FlipSprite flipSprite;
 	
 	public void Awake() {
         motor = GetComponent<CharacterMotor>();
         weapon = GetComponent<Weapon>();
         melee = GetComponent<MeleeAttack>();
+        holdingPickup = GetComponent<HoldingPickup>();
+        flipSprite = transform.Find("Sprite").GetComponent<FlipSprite>();
 	}
 	
     public void Update() {
@@ -46,6 +50,9 @@ public class FPSInputController : MonoBehaviour {
         motor.inputJump = Input.GetButton(jump);
 		
 		if (Input.GetButton(shoot)) {
+            if (holdingPickup.IsHolding()) {
+                holdingPickup.Throw(transform.position, flipSprite.Direction);
+            }
 			if (weapon != null && weapon.CanAttack) {
 				weapon.Attack(true);
 				//add sound in here later

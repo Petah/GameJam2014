@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MeleeAttack : MonoBehaviour {
 
-    private FlipSprite flipSprite;
+    private Direction playerDirection;
     private float i;
     private float swing = 0.6f;
     private float range = 1.2f;
@@ -12,7 +12,7 @@ public class MeleeAttack : MonoBehaviour {
     private int reload = 0;
     
     public void Awake() {
-        flipSprite = transform.Find("Sprite").GetComponent<FlipSprite>();
+        playerDirection = GetComponent<Direction>();
     }
 
     public void Attack() {
@@ -48,14 +48,14 @@ public class MeleeAttack : MonoBehaviour {
         Vector3 position = transform.position;
         position.x = Mathf.Cos(i) / 2;
         position.y = Mathf.Sin(-i) / 2 - 0.3f;
-        position.x *= flipSprite.Direction;
+        position.x *= playerDirection.Dir;
         position = transform.position + position;
         
         return (position - (transform.position + center)).normalized;
     }
 
     public void OnDrawGizmos() {
-        if (i <= swing && flipSprite) {
+        if (i <= swing && playerDirection) {
             Gizmos.DrawRay(transform.position + center, GetDirection() * range);
         }
     }
