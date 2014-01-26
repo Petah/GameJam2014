@@ -11,11 +11,16 @@ public class FPSInputController : MonoBehaviour {
     public string taunt;
     public string run;
 
+    public AudioClip[] taunts;
+    private int tauntIndex = 0;
+    private int tauntDelay = 0;
+
     private CharacterMotor motor;
     private Weapon weapon;
     private MeleeAttack melee;
     private HoldingPickup holdingPickup;
     private Direction playerDirection;
+    private DwarfAni ani;
 	
 	public void Awake() {
         motor = GetComponent<CharacterMotor>();
@@ -23,9 +28,14 @@ public class FPSInputController : MonoBehaviour {
         melee = GetComponent<MeleeAttack>();
         holdingPickup = GetComponent<HoldingPickup>();
         playerDirection = transform.GetComponent<Direction>();
+        ani = transform.GetComponent<DwarfAni>();
 	}
 	
     public void Update() {
+        if (ani != null && ani.lastHit != null && ani.lastHit.swing) {
+            return;
+        }
+
         // Get the input vector from keyboard or analog stick
         Vector3 directionVector = new Vector3(Input.GetAxis(horizontal), 0, 0);
         
@@ -67,8 +77,20 @@ public class FPSInputController : MonoBehaviour {
         if (Input.GetButton(shoot)) {
             melee.Punch();
         }
-        //Input.GetButton(shoot);
-        //Input.GetButton(taunt);
+        
+        if (Input.GetButton(shoot)) {
+            melee.Punch();
+        }
+        
+        if (Input.GetButton(taunt) && tauntDelay <= 0) {
+            tauntDelay = 20;
+            audio.PlayOneShot(taunts[tauntIndex++]);
+            if (tauntIndex >= taunts.Length) {
+                tauntIndex = 0;
+            }
+        }
+        tauntDelay--;
+        
     }
 
 }

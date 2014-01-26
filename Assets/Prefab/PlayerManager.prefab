@@ -39,6 +39,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 100000, guid: 99d4c204691089f4c9b27625b4df7af5, type: 2}
+  bodyControllers: []
+  armControllers: []
+  legControllers: []
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -3,14 +3,12 @@ using System.Collections;
 
 public class Impact {
     
-    public Vector3 direction;
-    public float force;
     public GameObject from;
+    public bool swing;
 
-    public Impact(Vector3 direction, float force, GameObject from) {
-        this.direction = direction;
-        this.force = force;
+    public Impact(GameObject from, bool swing) {
         this.from = from;
+        this.swing = swing;
     }
 
 }

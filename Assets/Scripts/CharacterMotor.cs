@@ -80,6 +80,8 @@ public class CharacterMotor : MonoBehaviour
     [System.Serializable]
     public class CharacterMotorJumping
     {
+        
+        public AudioClip jumpSound;
         // Can the character jump?
         public bool enabled = true;
         
@@ -471,6 +473,8 @@ public class CharacterMotor : MonoBehaviour
             // it's confusing and it feels like the game is buggy.
             if(jumping.enabled && canControl && (Time.time - jumping.lastButtonDownTime < 0.2))
             {
+                audio.PlayOneShot(jumping.jumpSound);
+
                 grounded = false;
                 jumping.jumping = true;
                 jumping.lastStartTime = Time.time;

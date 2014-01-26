@@ -13,7 +13,6 @@ GameObject:
   - 114: {fileID: 11400008}
   - 114: {fileID: 11400006}
   - 114: {fileID: 11400004}
-  - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400012}
   - 114: {fileID: 11400014}
@@ -36,6 +35,7 @@ GameObject:
   - 4: {fileID: 400002}
   - 212: {fileID: 21200000}
   - 95: {fileID: 9500000}
+  - 114: {fileID: 11400020}
   m_Layer: 0
   m_Name: Arms
   m_TagString: Untagged
@@ -70,6 +70,7 @@ GameObject:
   - 4: {fileID: 400006}
   - 212: {fileID: 21200002}
   - 95: {fileID: 9500002}
+  - 114: {fileID: 11400018}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -132,7 +133,7 @@ AudioSource:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: a60d417a194e17c4fb1017ad952ae83a, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -235,17 +236,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae89bc932ae69e4b88f8158a44c9038, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11400002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e620e18bf14b79349a0b0ebf16d28a46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -268,6 +258,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34839bcd48a35a40a11db4399501b88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  swingHit: {fileID: 8300000, guid: 67ec1adb0f9bd304b81c935179219a89, type: 3}
+  swingHit2: {fileID: 8300000, guid: 2fb23eb911a008c4c81b8f05887571ed, type: 3}
+  swingMiss: {fileID: 8300000, guid: 67ec1adb0f9bd304b81c935179219a89, type: 3}
+  punchHit1: {fileID: 8300000, guid: 800457a995b06c440b105ab6b0462706, type: 3}
+  punchHit2: {fileID: 8300000, guid: cabb1b5d8d9c593408387e5d438087cd, type: 3}
+  punchHit3: {fileID: 8300000, guid: 88dc4cf07ceb41649a5e8b27fd54492e, type: 3}
+  swinging: 0
+  punching: 0
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -286,6 +284,9 @@ MonoBehaviour:
   shoot: X1
   taunt: Y1
   run: RT1
+  taunts:
+  - {fileID: 8300000, guid: ecf8915fcf2fe2540b064e105c7fe484, type: 3}
+  - {fileID: 8300000, guid: b0fcb1380fb9b7f478b6812111cef39b, type: 3}
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -326,9 +327,10 @@ MonoBehaviour:
     gravity: 45
     maxFallSpeed: 20
   jumping:
+    jumpSound: {fileID: 8300000, guid: 5d959635605ef6643b07eeee4b9e348d, type: 3}
     enabled: 1
-    baseHeight: .699999988
-    extraHeight: .699999988
+    baseHeight: 1
+    extraHeight: 1
     perpAmount: 0
     steepPerpAmount: .5
   movingPlatform:
@@ -371,6 +373,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 10f769915bbf5fe4fa19f0346eb18668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallSound: {fileID: 8300000, guid: 2c5b3b6703471744c888a57a9c20868f, type: 3}
+--- !u!114 &11400018
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34490aa31c0bf1d4b8349ed234d0db67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11400020
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34490aa31c0bf1d4b8349ed234d0db67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!143 &14300000
