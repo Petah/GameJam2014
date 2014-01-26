@@ -16,6 +16,7 @@ public class LavaDeath : MonoBehaviour {
             transform.position = new Vector3(-10000, -10000);
         } else if (respawning == 0) {
             GameObject respawn = GameObject.FindGameObjectWithTag("Respawn");
+            transform.gameObject.GetComponent<DwarfAni>().Dead = true;
             transform.position = new Vector3(0, 10000000, 0);
             respawning = -1;
         } else if (transform.position.y < Camera.main.transform.position.y - 4) {
@@ -24,7 +25,6 @@ public class LavaDeath : MonoBehaviour {
             transform.position = position;
             respawning = 100;
             gameObject.SendMessage("Death", null, SendMessageOptions.DontRequireReceiver);
-		
         }
 	}
 

@@ -83,11 +83,8 @@ public class FPSInputController : MonoBehaviour {
         }
         
         if (Input.GetButton(taunt) && tauntDelay <= 0) {
-            tauntDelay = 20;
-            audio.PlayOneShot(taunts[tauntIndex++]);
-            if (tauntIndex >= taunts.Length) {
-                tauntIndex = 0;
-            }
+            tauntDelay = 50;
+            audio.PlayOneShot(taunts[Random.Range(0, taunts.Length)]);
         }
         tauntDelay--;
         

@@ -335,6 +335,21 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110223017
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: LegsPunch4
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 9a5a6366be0b6f34a8ee87a281096a34, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 1161, y: 255, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1102 &110223114
 State:
   m_ObjectHideFlags: 3
@@ -362,6 +377,21 @@ State:
   - {fileID: 7400000, guid: bc288300d4e967444864e50f828fb9a1, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
   m_Position: {x: 972, y: -180, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110245268
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: LegsWalk4
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 5bf4b3d2ddc83e54cb8da05ca0dfcbf8, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 1196, y: 320, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -470,6 +500,21 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110298200
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: LegsJump4
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 8c4bcc422d9836a4baf594d4a9765f39, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 1126, y: 190, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1107 &110700000
 StateMachine:
   serializedVersion: 2
@@ -491,6 +536,9 @@ StateMachine:
   - {fileID: 110215356}
   - {fileID: 110250639}
   - {fileID: 110278904}
+  - {fileID: 110298200}
+  - {fileID: 110223017}
+  - {fileID: 110245268}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:

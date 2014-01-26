@@ -392,6 +392,21 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110208736
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: BodyFall4
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 0893f69960f9a9548ace62f81c614234, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 1174, y: 802, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1102 &110212455
 State:
   m_ObjectHideFlags: 3
@@ -467,6 +482,21 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110231930
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: BodyJump4
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 99c55ac70a28fbf48b0e4f1e6ff0b902, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 1244, y: 932, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1102 &110237052
 State:
   m_ObjectHideFlags: 3
@@ -479,6 +509,21 @@ State:
   - {fileID: 7400000, guid: eeb4f90616ca8264bbb559cb71c560a0, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
   m_Position: {x: 859, y: 217, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110240709
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: BodyPunch4
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: dda77b3d118fd0b4ea1067fb1c7d3a43, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 1279, y: 997, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -524,6 +569,36 @@ State:
   - {fileID: 7400000, guid: 030a584067780c940847039747ddba6c, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
   m_Position: {x: 929, y: 347, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110247162
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: BodyBase4
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 9592c7f1c635ce84fbe983cc5dbd07d4, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 1139, y: 737, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110247424
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: BodyWalk4
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 9c5c8a3ea13f6b84cbfb941d4a9c8381, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 1314, y: 1062, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -602,6 +677,21 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110272810
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: BodyIdle4
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 494e676e105b8fa4d8579d7cbc192be3, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 1209, y: 867, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1102 &110280166
 State:
   m_ObjectHideFlags: 3
@@ -674,6 +764,12 @@ StateMachine:
   - {fileID: 110262585}
   - {fileID: 110215618}
   - {fileID: 110230545}
+  - {fileID: 110247162}
+  - {fileID: 110208736}
+  - {fileID: 110272810}
+  - {fileID: 110231930}
+  - {fileID: 110240709}
+  - {fileID: 110247424}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:

@@ -11,7 +11,7 @@ GameObject:
   - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: PlayerManager
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,9 +39,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 100000, guid: 99d4c204691089f4c9b27625b4df7af5, type: 2}
-  bodyControllers: []
-  armControllers: []
-  legControllers: []
+  bodyControllers:
+  - {fileID: 9100000, guid: 8caab119a1e23bd4888aa359d367bdd8, type: 2}
+  - {fileID: 9100000, guid: 8d98d4d7e6a2ef649b1f269b4c597e26, type: 2}
+  - {fileID: 9100000, guid: 35529d14b97f7f74e8b0527c3fadf04b, type: 2}
+  - {fileID: 9100000, guid: d9dff88a41a32134a8cb3dc1e97e5119, type: 2}
+  armControllers:
+  - {fileID: 9100000, guid: 688c73c8b30363f46b146e5260f10331, type: 2}
+  - {fileID: 9100000, guid: 092b0fb6403809d4d895a5601159a7d7, type: 2}
+  - {fileID: 9100000, guid: 3d5d5cb8c1cc61943bfb43b417ac77b3, type: 2}
+  - {fileID: 9100000, guid: 1f1f39b62a32a2d4590e96a2d0b15420, type: 2}
+  legControllers:
+  - {fileID: 9100000, guid: 33cf9976a377ea145b2281f7336bfcda, type: 2}
+  - {fileID: 9100000, guid: 4676938daddea574fb5c2bbd316d11c7, type: 2}
+  - {fileID: 9100000, guid: b8e645978aa2cc44da02d371ab39d8b7, type: 2}
+  - {fileID: 9100000, guid: 968b53a196ff27e4cbfe120514e96270, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

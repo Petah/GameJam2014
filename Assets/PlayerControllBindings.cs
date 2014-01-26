@@ -54,9 +54,18 @@ public class PlayerControllBindings : MonoBehaviour {
         foreach (GameObject player in players) {
             DwarfAni ani = player.GetComponent<DwarfAni>();
             if (ani.Dead) {
-                GameObject spawn = GameObject.FindGameObjectWithTag("Spawn");
-                ani.Dead = false;
-                player.transform.position = spawn.transform.position;
+                GameObject min = null;
+                foreach (GameObject spawn in GameObject.FindGameObjectsWithTag("UpSpawn")) {
+                    if (spawn.transform.position.y > Camera.main.transform.position.y) {
+                        if (min == null || spawn.transform.position.y < min.transform.position.y) {
+                            min = spawn;
+                        }
+                    }
+                }
+                if (min != null) {
+                    ani.Dead = false;
+                    player.transform.position = min.transform.position;
+                }
             }
             i++;
         }

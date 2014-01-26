@@ -99,7 +99,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: .159125805}
+  m_LocalPosition: {x: 0, y: 0, z: .100000001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400000}
@@ -110,7 +110,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -.159125805}
+  m_LocalPosition: {x: 0, y: 0, z: .100000001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400000}
@@ -287,6 +287,14 @@ MonoBehaviour:
   taunts:
   - {fileID: 8300000, guid: ecf8915fcf2fe2540b064e105c7fe484, type: 3}
   - {fileID: 8300000, guid: b0fcb1380fb9b7f478b6812111cef39b, type: 3}
+  - {fileID: 8300000, guid: 6d8cd929a3fef064bb27d30a0e6d79dc, type: 3}
+  - {fileID: 8300000, guid: 311e54c316f2bde4aa98d5726f6a0157, type: 3}
+  - {fileID: 8300000, guid: d83c2c7b97d8bc9409c480b1897c04b4, type: 3}
+  - {fileID: 8300000, guid: b4889831493db9d43a6a659621bb73df, type: 3}
+  - {fileID: 8300000, guid: dffc6b9ebac82584c9914bbabaceae07, type: 3}
+  - {fileID: 8300000, guid: 501621641252e5448903f91cd8a0190d, type: 3}
+  - {fileID: 8300000, guid: 1baae2cf903134242a7202ee4ff6f3d2, type: 3}
+  - {fileID: 8300000, guid: 172fb26d76ad7f0449f92954349d6cfe, type: 3}
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -330,7 +338,7 @@ MonoBehaviour:
     jumpSound: {fileID: 8300000, guid: 5d959635605ef6643b07eeee4b9e348d, type: 3}
     enabled: 1
     baseHeight: 1
-    extraHeight: 1
+    extraHeight: 1.20000005
     perpAmount: 0
     steepPerpAmount: .5
   movingPlatform:

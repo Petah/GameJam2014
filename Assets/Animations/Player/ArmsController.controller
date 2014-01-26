@@ -530,6 +530,21 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110207282
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ArmWalk4
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 71292cf1cd550a34bba10beed20e67a7, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 1280, y: 824, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1102 &110209626
 State:
   m_ObjectHideFlags: 3
@@ -590,6 +605,21 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110230479
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ArmSwing4
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: a523f2c6525fd93468531d8b2a21a883, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 1245, y: 759, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1102 &110232537
 State:
   m_ObjectHideFlags: 3
@@ -631,7 +661,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 7b429929f5366c744a96ffdf2bdc4a4f, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: 312, y: -216, z: 0}
+  m_Position: {x: 432, y: -252, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -680,6 +710,36 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110259005
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ArmJump4 0
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 4ac779b75a3ddbd41b77ebd399030acc, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 1175, y: 629, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110263671
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ArmIdle4
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 87e2885dceb5cf548867f49f6c66590c, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 1140, y: 564, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1102 &110276381
 State:
   m_ObjectHideFlags: 3
@@ -725,6 +785,21 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110295076
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ArmPunch4
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 02db2eae509420b4baafba807c942b0d, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 1210, y: 694, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1102 &110296006
 State:
   m_ObjectHideFlags: 3
@@ -734,7 +809,7 @@ State:
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400000, guid: 4ac779b75a3ddbd41b77ebd399030acc, type: 2}
+  - {fileID: 0}
   m_ParentStateMachine: {fileID: 110700000}
   m_Position: {x: 1000, y: 304, z: 0}
   m_IKOnFeet: 0
@@ -767,6 +842,11 @@ StateMachine:
   - {fileID: 110205734}
   - {fileID: 110249201}
   - {fileID: 110277681}
+  - {fileID: 110263671}
+  - {fileID: 110259005}
+  - {fileID: 110295076}
+  - {fileID: 110230479}
+  - {fileID: 110207282}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
