@@ -111,6 +111,8 @@ MonoBehaviour:
   attack: B1
   shoot: X1
   taunt: Y1
+  run: 
+  taunts: []
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -151,6 +153,7 @@ MonoBehaviour:
     gravity: 45
     maxFallSpeed: 20
   jumping:
+    jumpSound: {fileID: 0}
     enabled: 1
     baseHeight: .699999988
     extraHeight: .699999988
@@ -199,6 +202,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34839bcd48a35a40a11db4399501b88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  swingHit: {fileID: 0}
+  swingHit2: {fileID: 0}
+  swingMiss: {fileID: 0}
+  punchHit1: {fileID: 0}
+  punchHit2: {fileID: 0}
+  punchHit3: {fileID: 0}
+  swinging: 0
+  punching: 0
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1

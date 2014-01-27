@@ -13,7 +13,7 @@ public class CameraMove : MonoBehaviour {
 
     public void Start() {
         startMarker = transform.position;
-        endMarker = new Vector3(transform.position.x, transform.position.y + 100, transform.position.z);
+        endMarker = new Vector3(transform.position.x, transform.position.y + stoppingPlace, transform.position.z);
         startTime = Time.time;
         journeyLength = Vector3.Distance(transform.position, endMarker);
     }
